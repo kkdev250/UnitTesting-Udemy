@@ -1,0 +1,5 @@
+Vitest (Jest compatible test runner & assertion library, but also natively supports ES6 modules)
+install: npm install --save-dev vitest
+po instalacji należy dodać skrypt w package.json:
+"scripts": {
+  "test": "vitest --globals"
