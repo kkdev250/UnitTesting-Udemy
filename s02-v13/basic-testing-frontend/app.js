@@ -1,4 +1,4 @@
-import { extractNumbers } from './src/parser.js';
+import { extractNumbers } from './src/parser.js'; // no webpack -> '.js' is necessary
 import {
   validateStringNotEmpty,
   validateNumber,
