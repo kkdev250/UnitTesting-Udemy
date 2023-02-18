@@ -20,3 +20,4 @@ sec6: TESTING ASYNC CODE:
 -testing promises (return expect().resolves/rejects.toBe...)
 -testing classes (toHaveProperty)
 -hooks (beforeAll, beforeEach, afterAll, afterEach)
+-paralelly running tests: it.concurrent('should....
