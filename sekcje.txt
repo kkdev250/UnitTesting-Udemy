@@ -2,4 +2,19 @@ Vitest (Jest compatible test runner & assertion library, but also natively suppo
 install: npm install --save-dev vitest
 po instalacji należy dodać skrypt w package.json:
 "scripts": {
-  "test": "vitest --globals"
+  "test": "vitest --globals" (globals: you can then run 'it', 'expect' without imports)
+
+
+sec3-5: BASIC TESTS, INTEGRATION TESTS:
+(integration test - checks if the combination of funictions (other units, separately tested) is also valid)
+-it()
+-expect()
+-describe() - organizowanie testów w zbiór (test suite) - opis której funkcji (unitu) dotyczą
+-assertions:
+--basic: toBe(value), toBeTypeOf(), toBeNaN(), toContain(), 
+--arrays in result: toEqual() 
+--errors: toThrow(), .not  //toThrow - testujemy nie rezultat ale funkcję, która może rzucić błędem
+
+sec6: TESTING ASYNC CODE:
+-testing callbacks (expect with 'done' in try...catch)
+-testing promises (return expect().resolves/rejects.toBe...)
