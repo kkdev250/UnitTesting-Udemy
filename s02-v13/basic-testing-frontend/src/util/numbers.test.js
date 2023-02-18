@@ -37,7 +37,9 @@ describe('cleanNumbers()', () => { //integration test - checks if the combinatio
 
     const cleanedNumbers = cleanNumbers(numberValues);
 
-    expect(cleanedNumbers[0]).toBeTypeOf('number');
+    // expect(cleanedNumbers[0]).toBeTypeOf('number'); // passes
+    // expect(cleanedNumbers).toBe([1, 2]); // fails: toBe acts like ===  (and arrays are reference values)
+    expect(cleanedNumbers).toEqual([1, 2]); // ok - the right way for deep comparing arrays
   });
 
   it('should throw an error if an array with at least one empty string is provided', () => {
