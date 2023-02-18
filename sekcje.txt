@@ -18,3 +18,5 @@ sec3-5: BASIC TESTS, INTEGRATION TESTS:
 sec6: TESTING ASYNC CODE:
 -testing callbacks (expect with 'done' in try...catch)
 -testing promises (return expect().resolves/rejects.toBe...)
+-testing classes (toHaveProperty)
+-hooks (beforeAll, beforeEach, afterAll, afterEach)
