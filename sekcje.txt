@@ -23,7 +23,7 @@ sec6: TESTING ASYNC CODE:
 -hooks (beforeAll, beforeEach, afterAll, afterEach)
 -paralelly running tests: it.concurrent('should....
 
-sec.6: SPIES, MOCKS
+sec.7: SPIES, MOCKS
 -vi.fn() - creates an empty function that keep tracks of its execution (===jest.fn() in jest)
 -vi.fn(()=>{...}) - spy with custom code (
 -spy.mockImplementation, spy.mockImplementationOnce - adding custom code to existing spy
@@ -31,3 +31,6 @@ sec.6: SPIES, MOCKS
 -vi.mock('...') - automocking: podajemy nazwę ew. path modułu do zamockowania i wszystkie funkcje w module będą zastąpione spy'ami
 -vi.mock('...', () => {return {...}) mocking only specific methods form the module
 -__mocks__ folder - for all vi.mock()s: inside put files with names of the modules you want to mock
+
+sec.8: MOCKS ADVANCED
+
