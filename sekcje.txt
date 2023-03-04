@@ -38,3 +38,8 @@ sec.8: MOCKS ADVANCED
 -rejects.toBeInstanceOf()
 -podmiana stuba dla jednego testu: mockImplementationsOnce
 
+sec.9: DOM
+-testing environments: NodeJs (no DOM), JSDOM (vitest, jest), Happy-DOM (vitest only)
+-enabling JSDOM or Happy-DOM: package.json: "test": "vitest --run --environment happy-dom"
+-loading html file into the virtual DOM, stubbing 'document'
+
