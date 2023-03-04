@@ -13,10 +13,10 @@ sec3-5: BASIC TESTS, INTEGRATION TESTS:
 -describe() - organizowanie testów w zbiór (test suite) - opis której funkcji (unitu) dotyczą
 -assertions:
 --basic: toBe(value), toBeTypeOf(), toBeNaN(), toContain(), 
---arrays in result: toEqual() 
+--arrays, objects in result: toEqual() 
 --errors: toThrow(), .not  //toThrow - testujemy nie rezultat ale funkcję, która może rzucić błędem
 
-sec6: TESTING ASYNC CODE:
+sec6: TESTING ASYNC CODE, HOOKS:
 -testing callbacks (expect with 'done' in try...catch)
 -testing promises (return expect().resolves/rejects.toBe...)
 -testing classes (toHaveProperty)
@@ -33,4 +33,8 @@ sec.7: SPIES, MOCKS
 -__mocks__ folder - for all vi.mock()s: inside put files with names of the modules you want to mock
 
 sec.8: MOCKS ADVANCED
+-vi.stubGlobal('...', () => {}) - mocking global function, not impored from some module (like fetch)
+-testing error message from reject
+-rejects.toBeInstanceOf()
+-podmiana stuba dla jednego testu: mockImplementationsOnce
 
